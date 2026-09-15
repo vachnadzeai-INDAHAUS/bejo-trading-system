@@ -1,0 +1,388 @@
+{
+  "package_id": "BEJO-TRADING-RC2",
+  "document_issue_date": "2026-09-09",
+  "status": "CONSOLIDATED_ENGINEERING_CANDIDATE_FOR_IMPLEMENTATION_AND_VALIDATION",
+  "first_read": "00_START_HERE.md",
+  "main_document": "01_ENGINEERING_MANUAL_KA.docx",
+  "markdown_representation": "01_ENGINEERING_MANUAL_KA.md",
+  "supersedes_working_package": "BEJO-TRADING-RC1",
+  "source_history": "audit/rc1_package_manifest.json and audit/rc1_verification_report.json are provenance only, not current release assertions.",
+  "authority": "Explicit user decisions; specific manual requirements; parameter files; contracts; implementation. Conflicts must be reported, not silently resolved.",
+  "schema_version": "1.1",
+  "runtime_status": "REFERENCE_TESTS_ONLY; FULL_SYSTEM_NOT_BUILT",
+  "live_enabled": false,
+  "research_50_50_variants_enabled_by_default": false,
+  "read_order": [
+    "00_START_HERE.md",
+    "01_ENGINEERING_MANUAL_KA.docx",
+    "config/paper.json",
+    "config/policies.json",
+    "config/exit_policies.json",
+    "contracts/models.py",
+    "contracts/schemas/",
+    "contracts/openapi.json",
+    "database/001_schema.sql",
+    "database/002_roles.sql",
+    "database/003_exit_policies.sql",
+    "reference/",
+    "tests/",
+    "scenarios/",
+    "reports/verification_report.json"
+  ],
+  "current_evidence_report": "reports/verification_report.json",
+  "file_count_excluding_manifest": 70,
+  "checksum_algorithm": "SHA-256",
+  "checksum_excludes": "PACKAGE_MANIFEST.json itself; internal QA renders and caches are not shipped",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 54,
+      "sha256": "152f974a0969cee20e595969f4839290aa04413c051abebdfae678f78d3714cc"
+    },
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 11127,
+      "sha256": "abca1b116c7017bebd1a2c427e2891671d892660ea899e04ff7c151acc8a9a6d"
+    },
+    {
+      "path": "01_ENGINEERING_MANUAL_KA.docx",
+      "bytes": 1497027,
+      "sha256": "2a9b7e30b2a4b4cc6567e64ae38a939b33d155502de9bdbf5ccc536f66f7b35e"
+    },
+    {
+      "path": "01_ENGINEERING_MANUAL_KA.md",
+      "bytes": 362769,
+      "sha256": "a8eaf15bf80855f7c6d121238fb03910aba5c7b333332aa189ddad5c4155e57e"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3411,
+      "sha256": "9e4156eff2eb3d9c2c578a37a3e438cc1dd9d104322ac523efcf181b6d710498"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 4100,
+      "sha256": "0731f70fc9ae8580a1c1e3c2b820e2c7b9a37e6f4783046ef11457cf126360d2"
+    },
+    {
+      "path": "audit/content_preservation.json",
+      "bytes": 499,
+      "sha256": "5797071fb741d64f7b5b331f315a664ccd4df32c6deab33492969d608d40f05b"
+    },
+    {
+      "path": "audit/final_package_checks.json",
+      "bytes": 491,
+      "sha256": "47dc32e65b27ab9c2761f4db4ee09b3317cd6d87e869491c52e96acc9873f160"
+    },
+    {
+      "path": "audit/findings.json",
+      "bytes": 9534,
+      "sha256": "7365f9a81a8589d2291efde3d43b8646ee7e4712c9ee29433fc3dd53d7bb5510"
+    },
+    {
+      "path": "audit/input_inventory.json",
+      "bytes": 27347,
+      "sha256": "7e95c15d76f0e96ef1ae6e3c70ee6957cb5224e76cbe69875b48420324fae6df"
+    },
+    {
+      "path": "audit/rc1_package_manifest.json",
+      "bytes": 9332,
+      "sha256": "e772dde53fedf2c5975565f0deeb558f601657ddb198e88ddbddff003a474497"
+    },
+    {
+      "path": "audit/rc1_verification_report.json",
+      "bytes": 3648,
+      "sha256": "8f7f5b28b382cc2a8e923d527b36083320f9514dde7b4b198119bc7c2bbac80c"
+    },
+    {
+      "path": "audit/rc2_change_decisions.json",
+      "bytes": 1342,
+      "sha256": "5603f7e4fc2af2593630a8b52bcbf95270b4b2d924b618d15a89ae99940f1e0f"
+    },
+    {
+      "path": "audit/sources.json",
+      "bytes": 5968,
+      "sha256": "79c896f4d949efc8bf51789be642c1778877dc05db808868d9504ba23a49c694"
+    },
+    {
+      "path": "config/exit_policies.json",
+      "bytes": 7093,
+      "sha256": "975d1470d8079a6b9c782b0c5383355c3238b610bcf72978ae3fceedf163e5df"
+    },
+    {
+      "path": "config/paper.json",
+      "bytes": 2728,
+      "sha256": "ca35f9e7c3266a30e634dc3ad378b47e28e604938105c6d6be63b819384244f9"
+    },
+    {
+      "path": "config/policies.json",
+      "bytes": 5800,
+      "sha256": "4c5193145cc851407d0c43ef874b46a7f6448aaf5bfef2e8fbff68c86ddd33e3"
+    },
+    {
+      "path": "contracts/models.py",
+      "bytes": 29029,
+      "sha256": "3533274bacb3f6d02def18b29bd52432496407d99bc033fd2155c7f9d14354b7"
+    },
+    {
+      "path": "contracts/openapi.json",
+      "bytes": 120374,
+      "sha256": "e7115b228479b6bd89dd38aee62d45820a2387b8feb45ce2df69dfcb47dc447d"
+    },
+    {
+      "path": "contracts/schemas/BookSnapshot.json",
+      "bytes": 1377,
+      "sha256": "886522dd4061564f33698a326062dd85e85b65ece6de87218c5275c515120853"
+    },
+    {
+      "path": "contracts/schemas/Candle.json",
+      "bytes": 1716,
+      "sha256": "b6e655a2b1183d420237a157b4a6661104eb95c49ecd4f529210c8acccfd96bd"
+    },
+    {
+      "path": "contracts/schemas/Decision.json",
+      "bytes": 2978,
+      "sha256": "2be9c98fcc70fc3787ec4c0cd9900ce1c9baf3413f485953a90a60aae585198f"
+    },
+    {
+      "path": "contracts/schemas/Envelope.json",
+      "bytes": 82046,
+      "sha256": "19d4675720bf5dc96158024c4d302ac9c9ffbd62e6c8d36db5d8e6175d2159d6"
+    },
+    {
+      "path": "contracts/schemas/Evidence.json",
+      "bytes": 4771,
+      "sha256": "cb826154deee63dc4420d5fe2f4dd0bf8f87e9769f2194c7f5ca2f5b5338f3b6"
+    },
+    {
+      "path": "contracts/schemas/ExecutionPlan.json",
+      "bytes": 3350,
+      "sha256": "595da989e2d6d815e72f9203e00cb3f0303a5ea470e781f7a521b72a78e39014"
+    },
+    {
+      "path": "contracts/schemas/ExitManagementState.json",
+      "bytes": 4510,
+      "sha256": "13a211dca84bb4a5f745eab516afc901cb56ad90607fc98229374713dbb29320"
+    },
+    {
+      "path": "contracts/schemas/ExitPolicy.json",
+      "bytes": 3727,
+      "sha256": "1c6135a9839bbdee15645866eecd643a334939c2ac1e619c8676f3ad48bd48b3"
+    },
+    {
+      "path": "contracts/schemas/Fill.json",
+      "bytes": 1917,
+      "sha256": "ac245b910a8c489509226c351c6e4ce16e8ca783357a0ce6ad1603be0584976f"
+    },
+    {
+      "path": "contracts/schemas/Incident.json",
+      "bytes": 1353,
+      "sha256": "b66b03b8f8f2ad5dda757006f25bce28fa3115f78e8971c751d925c9e4557e49"
+    },
+    {
+      "path": "contracts/schemas/Instrument.json",
+      "bytes": 2311,
+      "sha256": "a937fccca5eb72ddee8f97a211a6fe88962275a9f75d627a547f09885bbe78ae"
+    },
+    {
+      "path": "contracts/schemas/LiquidationEvent.json",
+      "bytes": 1769,
+      "sha256": "588e579b2e84df6741f17a6f96783c4381274d54521bbc5f5087ae27db8a617c"
+    },
+    {
+      "path": "contracts/schemas/MarketState.json",
+      "bytes": 3480,
+      "sha256": "b9fb6b42f8dae86ba86c86e8c3ffc185078c9d75668e8c67efe36ff777a5f3c5"
+    },
+    {
+      "path": "contracts/schemas/Metric.json",
+      "bytes": 1557,
+      "sha256": "f5c92431154cebd8898decc308f488afb8286e02a7e84c9f7732456a24985ea2"
+    },
+    {
+      "path": "contracts/schemas/NewsEvent.json",
+      "bytes": 2187,
+      "sha256": "3449945536dde9b08d85a4c5f742cb52eb23ccc27da4aeea39294d289edb55f9"
+    },
+    {
+      "path": "contracts/schemas/OnchainTransfer.json",
+      "bytes": 2706,
+      "sha256": "423b841038d48c05fc2c83af241e3d1bfbaa9c3c1fae1a568f04062a73e033b2"
+    },
+    {
+      "path": "contracts/schemas/OrderCommand.json",
+      "bytes": 3345,
+      "sha256": "6dc0f751674f99a58add3d236f8cc4c33d81944c56b2e500d2d2de2b73b37cd7"
+    },
+    {
+      "path": "contracts/schemas/OrderEvent.json",
+      "bytes": 1800,
+      "sha256": "ad0c5e58a70b97b5f0cf60180fbb5f05b32568228db4791ebd0e0cabf405f2af"
+    },
+    {
+      "path": "contracts/schemas/PositionRecommendation.json",
+      "bytes": 3138,
+      "sha256": "2e691c103a88775340ed2b23b43390075d947396654758f61c5786d5f2259d38"
+    },
+    {
+      "path": "contracts/schemas/PositionSnapshot.json",
+      "bytes": 2700,
+      "sha256": "bf378aafce7e0a321ef59a2faeb588c792de4208030899fa97c3e8bb1ad71a35"
+    },
+    {
+      "path": "contracts/schemas/QuantEvaluation.json",
+      "bytes": 4013,
+      "sha256": "a7ecb9e1abb25c40b91d3e797848b9a48597fdfa530b99c579d3ddc11aecb6b9"
+    },
+    {
+      "path": "contracts/schemas/RiskPermit.json",
+      "bytes": 2583,
+      "sha256": "56b726166e0c905887b052fd51ddc211fa52e5050f631e857e71b52c42a1cb32"
+    },
+    {
+      "path": "contracts/schemas/SentimentBatch.json",
+      "bytes": 3046,
+      "sha256": "8f2020e7fdd6b12df21bec42eb0185d733255d0e430865eed9695ca3b73562f0"
+    },
+    {
+      "path": "contracts/schemas/SetupCandidate.json",
+      "bytes": 4017,
+      "sha256": "c84ebc22ccf39e2518aa1db09f46a5edc7b844e39576996b8c7885deccf9e343"
+    },
+    {
+      "path": "contracts/schemas/TradePrint.json",
+      "bytes": 1037,
+      "sha256": "1c4682464fc59c4b7557ed8e573e283efcb57574a001e50bd475ddd3fd6a1f09"
+    },
+    {
+      "path": "contracts/schemas/TradeThesis.json",
+      "bytes": 4025,
+      "sha256": "b6aa111036ce6e0ed30e03ed7608bb92257789ced7ec53c40235d4e665b7c6ff"
+    },
+    {
+      "path": "database/001_schema.sql",
+      "bytes": 16230,
+      "sha256": "e450464478f489425bdb7919e9bf53313e41bcfd67f578c9b4f3711b0fe52212"
+    },
+    {
+      "path": "database/002_roles.sql",
+      "bytes": 2032,
+      "sha256": "0abd4179ab2be5b4b1e5c81565262523af7438053e18f7d05517647d6706474e"
+    },
+    {
+      "path": "database/003_exit_policies.sql",
+      "bytes": 9083,
+      "sha256": "452f2be5fae72c1fb2c8776e1711f9ddbb7a24fb27e77ea575fe96c50740aef4"
+    },
+    {
+      "path": "diagrams/01_system.dot",
+      "bytes": 3519,
+      "sha256": "22198d84a339e6dab8dd2a1efc826bedef35a2d2704b80433bf60b37f268c7dd"
+    },
+    {
+      "path": "diagrams/01_system.png",
+      "bytes": 449275,
+      "sha256": "efac406d6aa4d2dc5719a7f88370e5f595894feb83bcf46760e01c096bb6a339"
+    },
+    {
+      "path": "diagrams/02_decision.dot",
+      "bytes": 2247,
+      "sha256": "f0650054596720d39819caa0249194ae99851c1f8dd103123b896fc8573f2924"
+    },
+    {
+      "path": "diagrams/02_decision.png",
+      "bytes": 307129,
+      "sha256": "cbf745b77ce098930db534d6f575d947a3025c4cccd44f8e4a0034f149d6fc35"
+    },
+    {
+      "path": "diagrams/03_orders.dot",
+      "bytes": 2369,
+      "sha256": "4f5d1031ed0ad9f5270a422f1cf388a534ec24abe0d262b0b8640be69f92fa2e"
+    },
+    {
+      "path": "diagrams/03_orders.png",
+      "bytes": 321738,
+      "sha256": "ca8ffc09ed8545a4c20f810952e8711a9e01e9f1305f954be2a63b6c50f88ab1"
+    },
+    {
+      "path": "diagrams/04_position.dot",
+      "bytes": 2500,
+      "sha256": "426666904ba4aea9c4c1389b58af11bfb1632d0a80e483eaccb38006fdacea59"
+    },
+    {
+      "path": "diagrams/04_position.png",
+      "bytes": 321125,
+      "sha256": "29e1436852beb76767761ef288aeef2cd01494a94f4003956df21d782f4957c2"
+    },
+    {
+      "path": "reference/exit_management.py",
+      "bytes": 12400,
+      "sha256": "6456aa34e26ff1ae5f3c19e1087ba1b640cf305b17ebeef5f59b49f094775a9d"
+    },
+    {
+      "path": "reference/kernel.py",
+      "bytes": 15871,
+      "sha256": "2665101ed791dea46e22b9e46ba6542bb5d4a86623ad25d5b01a1990c0b6850f"
+    },
+    {
+      "path": "reports/exit_acceptance_matrix.csv",
+      "bytes": 2439,
+      "sha256": "505cfae5c38950e29e4bda6aeae8f5e0688e8c211cdf128fc0825fa527d508d2"
+    },
+    {
+      "path": "reports/reference_tests.txt",
+      "bytes": 260,
+      "sha256": "ce8332a2a61abd2e0fb4fcca9300caebd87c673d4f472fe7e06b6cabc4503d87"
+    },
+    {
+      "path": "reports/reference_tests.xml",
+      "bytes": 17127,
+      "sha256": "46a6ab957a19d21b4aaf04d943260eedd4c046c46a28c18c256254a6b64bca68"
+    },
+    {
+      "path": "reports/system_acceptance_matrix.csv",
+      "bytes": 8600,
+      "sha256": "64e5cfe23b178b9c26234b699c403fa68b19900688f49125f71c8e754582b4e3"
+    },
+    {
+      "path": "reports/verification_report.json",
+      "bytes": 5357,
+      "sha256": "56ff1115fc1b2f61a0382bd10b205b1a9cd8a00bd601e3f47072c6c976497836"
+    },
+    {
+      "path": "requirements-reference.txt",
+      "bytes": 50,
+      "sha256": "d0b94dc1db09ba2597015223e9cb3281442c8b3d2b6967cc6a24405148660cfe"
+    },
+    {
+      "path": "scenarios/contract_examples.json",
+      "bytes": 7055,
+      "sha256": "99c2ce6be0850cb9f4c975977a405988c94b5e417bc47f1e0069e0d38819a3d7"
+    },
+    {
+      "path": "scenarios/exit_management_values.json",
+      "bytes": 2101,
+      "sha256": "f891c886a983697385b4f376dc04451fad385efc43c0698a793f7f17602e6162"
+    },
+    {
+      "path": "scenarios/golden_values.json",
+      "bytes": 1109,
+      "sha256": "f6c6f3fbe6c8bb7e7edb467cdafaca7029ac084687a97995cdd07c580e62aa16"
+    },
+    {
+      "path": "scripts/generate_contracts.py",
+      "bytes": 1623,
+      "sha256": "d00a6f43b419197ecfb8c605d861e3b9cdea359380f69ccbc32bd435e529bde1"
+    },
+    {
+      "path": "tests/test_exit_management.py",
+      "bytes": 15431,
+      "sha256": "b1182a43868d2f7de231e00afed28522f97db6dce4c679c3fbd1e1df70d369e5"
+    },
+    {
+      "path": "tests/test_reference.py",
+      "bytes": 13128,
+      "sha256": "8e3479e3e5b373c62a91f67fe409e38f5f573bfcfaf6c096ff154050b1e7fa8f"
+    }
+  ]
+}
